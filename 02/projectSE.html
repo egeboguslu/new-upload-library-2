@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+      rel="stylesheet">
+      
+  <!-- Our custom CSS -->
+  <link rel="stylesheet" href="projectSE.css">
+  <title>Project_02 | BUGG·E website</title>
+  
+  <script src="projectSE.js" defer></script>
+</head>
+
+
+
+
+
+<body class="home">
+  
+  <header class="primary-header flex">
+    <div class="flex" style="align-items: center; gap: 2rem; margin-left: 2rem;">
+      <div>
+          <img src="logo copy 2.svg" alt="BUGG·E logo" class="logo">
+      </div>
+      <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
+      <nav>
+          <ul id="primary-navigation" class="primary-navigation flex" style="gap: 2rem">
+              <li><a class="text-dark uppercase fs-300" style="color: black;" href="ProjectSE.html"><span style="color: black;">01</span>Bugg·e</a>
+              <li><a class="text-dark fs-300" href="library-bugs.html"><span>02</span>Library</a>
+              <li><a class="text-dark fs-300" href="technology.html"><span>03</span>Contact</a>
+          </ul>
+      </nav>
+    </div>
+  <!-- dropdown profile button -->
+  <div class="dropdown" data-dropdown>
+    <button class="profile" data-dropdown-button>E</button>
+    <div class="dropdown-menu information-grid">
+      <div class="dropdown-border">
+        <div class="dropdown-links-upper">
+          <a href="#" class="link fs-300">Ege Boguslu</a>
+          <div class="fs-200" style="color: grey;">e.boguslu@tilburguniversity.edu</div>
+        </div>
+      </div>
+      <div style="margin-bottom: .75rem;">
+        <div class="dropdown-links-lower">
+          <a href="#" class="link fs-300">Read the announcement</a>
+          <a href="#" class="link fs-300">Join the Discord</a>
+          <a href="#" class="link fs-300">Sign out</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+  <!-- upload -->
+  <main>
+    <form action="upload.php" method="POST">
+      <input type="file" multiple>
+      <p>Drag your file here or click in this area.</p>
+      <button class="text-dark fs-300" type="submit">Upload</button>
+    </form>
+  </main>
+
+</body>
+</html>
